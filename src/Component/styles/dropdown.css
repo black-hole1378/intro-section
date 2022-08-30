@@ -1,0 +1,76 @@
+.btn-secondary-outline {
+    color: var(--gray-color);
+    font-size: 0.6rem;
+}
+
+.dropdown {
+    display: none;
+}
+
+
+.feature-button , .compony-button {
+   border: none;
+   color: var(--gray-color);
+   font-size: 0.9rem;
+   background-color: transparent;
+}
+
+.feature-items , .company-items {    
+    list-style: none;
+}
+
+.company-items li { 
+    width: 100%;
+    padding: 8px;
+}
+
+
+
+.feature-items li  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
+.feature-items li:hover , .company-items li:hover{
+    background-color: gainsboro; 
+    border-radius: 10px;     
+}
+
+
+.feature-items li .icons {
+   width: 20px; 
+   height: 20px; 
+}
+
+.link {
+   color: var(--gray-color);
+   text-decoration: none;
+   font-size: 0.7rem; 
+}
+
+.link:hover {
+    color: var(--gray-color);
+}
+
+.feature-dropdown {
+   padding: 10px;
+   padding-left: 20px; 
+   min-width: 180px;
+   text-align: center; 
+}
+
+.company-dropdown {
+    padding: 10px;
+    padding-left: 20px; 
+    min-width: 140px;  
+}
+
+@media screen and (min-width: 800px) {
+  .dropdown {
+     display: block;
+  }     
+}

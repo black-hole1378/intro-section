@@ -1,0 +1,65 @@
+.sidebar {
+   position: absolute;   
+   height: 100%;
+   width: 60%;    
+   z-index: 1000;  
+   float: right; 
+   top: 0;
+   right: 0;       
+   box-shadow: 20px 20px white;
+   background-color: white;
+   display: none; 
+   padding: 20px;
+}
+
+.button-group {
+   display: flex;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end; 
+}
+
+.button-group button {
+   border: none;
+   background-color: transparent;
+}
+
+.button-group button #close-icon{ 
+   font-size: 0.9rem;
+}
+
+.menu-items {
+   margin-top: 20px; 
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   justify-content: start; 
+   width: 100%;
+   list-style: none;
+   height: 200px; 
+}
+
+.tabs-link {
+   text-decoration: none; 
+   color: var(--gray-color);
+   font-size: 0.9rem; 
+}
+
+.sidebar-login , .sidebar-register{
+   width: 100%;
+   color: var(--gray-color);
+   font-size: 0.9rem;
+}
+
+.sidebar-register {
+   border: 1px solid var(--gray-color);
+   border-radius: 15px;
+}
+
+
+@media screen and (min-width: 800px) {
+   .sidebar {
+      display: none; 
+   }  
+}

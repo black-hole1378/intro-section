@@ -1,0 +1,26 @@
+.navbar-container {
+   display: flex;  
+   gap: 20px; 
+   align-items: center; 
+}
+
+.dropdown-feature {
+   display: none; 
+}
+
+.career-link , .about-link{
+   font-size: 0.8rem;
+   padding: 8px;   
+}
+
+.career-link:hover , .about-link:hover {
+    color: var(--gray-color);
+    background-color: gainsboro;  
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 400px) {
+   .career-link, .about-link {
+     display: none;
+   }   
+}

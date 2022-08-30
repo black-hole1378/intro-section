@@ -1,0 +1,95 @@
+.header {
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;  
+   flex-direction: row;
+   width: 100vw;  
+   height: max-content;
+   padding: 10px; 
+}
+
+.header--active {
+   background-color: rgb(78, 67, 67);
+   z-index: 1000;
+   opacity: 0.2;  
+}
+
+.logIn-button {
+   display: none;
+   font-size: 0.9rem;
+} 
+
+.register-button {
+   display: none;
+   font-size: 0.8rem;
+   padding: 8px;  
+   border-radius: 14px;
+   border: 1px solid var(--gray-color);
+}
+
+.menu-button {
+   border: none;  
+   color: var(--gray-color);  
+   background-color: transparent; 
+}
+
+.menu-button #icon {
+   font-size: 2.3rem;
+}
+
+.left-header-container , .right-header-container {
+   display: flex;  
+   align-items: center;
+   gap: 20px;   
+}
+
+.left-header-container {
+   gap: 60px;
+}
+
+
+
+.logo {
+   font-size: 2rem;
+   text-decoration: none;
+   color: var(--black-color);
+   font-weight: bolder;  
+}
+
+.logo:hover {
+   color: var(--black-color);
+}
+
+@media screen and (min-width: 800px) {  
+   .menu-button {
+      display: none;
+   }
+   
+   .logo {
+     font-size: 2.5rem; 
+   }
+
+   .left-header-container {
+      margin-left: 50px;
+   }
+
+   .right-header-container {
+      margin-right: 40px;
+   }
+
+
+   .register-button , .logIn-button{
+      display: block;
+   }
+}
+
+@media screen and (max-width: 400px) {
+   html {
+      font-size: 0.8rem;
+   }
+   
+   .items-container img {
+      width: 40px; 
+   }
+   
+}
